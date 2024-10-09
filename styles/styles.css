@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0; /* Remove preenchimento padrão */
+    width: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #eaf3fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.hero-content {
+    max-width: 60%;
+}
+
+footer {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.about, .projects, .contact {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image-container {
+    display: flex; /* Define o contêiner da imagem como um flex container */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+}
+
+.projects img {
+    max-width: 400px; /* Limita a largura máxima da imagem */
+    /* Não é necessário usar display: flex aqui */
+}
+
+.contact {
+    padding: 2rem;
+    max-width: 800px; /* Mantém o conteúdo principal restrito */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.full-width {
+    width: 100%; /* Faz com que o iframe ocupe 100% da largura */
+    height: 360px; /* Ajuste a altura conforme necessário */
+    border: 0; /* Remove a borda do iframe */
+    display: block; /* Garante que o iframe é tratado como um bloco */
+}
+
+@media (max-width: 800px) {
+    .full-width {
+        height: 300px; /* Ajuste a altura em telas menores, se necessário */
+    }
+}
